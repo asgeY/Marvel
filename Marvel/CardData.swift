@@ -37,7 +37,7 @@ let cardData: [Card] = [
     headline: "Hulk Smash",
     imageName: "hulk",
     callToAction: "Smash",
-    message: "physicist who physically transforms into the Hulk under emotional stress",
+    message: "Physicist who physically transforms into the Hulk under emotional stress",
     gradientColors: [Color("Color07"), Color("Color08")]
   ),
   Card(
