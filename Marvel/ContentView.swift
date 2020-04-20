@@ -4,13 +4,13 @@
 //  Copyright © 2020 Asge Yohannes. All rights reserved.
 //
 
-import SwiftUI 
+import SwiftUI
+import UIGradients_Swift
 
 struct ContentView: View {
     // MARK: - PROPERTIES
     
     var cards: [Card] = cardData
-    
     // MARK: - CONTENT
     
     var body: some View {
@@ -29,12 +29,15 @@ struct ContentView: View {
                     }
                         
                     .padding(20)
-                    
+        
                 }
                 Spacer()
                     .padding(.vertical, (fullView.size.width - 150))
-                
+               
             }
+            .background(
+                LinearGradient(gradient: Gradient(colors: [.red, .black]), startPoint: .top, endPoint: .bottom))
+                .edgesIgnoringSafeArea(.all)
         }
     }
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		589B51C7244D16DC007DD217 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589B51C2244D16DC007DD217 /* CardView.swift */; };
 		589B51C8244D16DC007DD217 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589B51C3244D16DC007DD217 /* PlaySound.swift */; };
 		589B51C9244D16DC007DD217 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589B51C4244D16DC007DD217 /* CardModel.swift */; };
+		589B51CD244E474E007DD217 /* UIGradients-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 589B51CC244E474E007DD217 /* UIGradients-Swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589B51CD244E474E007DD217 /* UIGradients-Swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +105,9 @@
 			dependencies = (
 			);
 			name = Marvel;
+			packageProductDependencies = (
+				589B51CC244E474E007DD217 /* UIGradients-Swift */,
+			);
 			productName = Marvel;
 			productReference = 589B519D244CC41C007DD217 /* Marvel.app */;
 			productType = "com.apple.product-type.application";
@@ -131,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 589B5194244CC41C007DD217;
+			packageReferences = (
+				589B51CB244E474E007DD217 /* XCRemoteSwiftPackageReference "UIGradients-Swift" */,
+			);
 			productRefGroup = 589B519E244CC41C007DD217 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		589B51CB244E474E007DD217 /* XCRemoteSwiftPackageReference "UIGradients-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SikandAlex/UIGradients-Swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		589B51CC244E474E007DD217 /* UIGradients-Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 589B51CB244E474E007DD217 /* XCRemoteSwiftPackageReference "UIGradients-Swift" */;
+			productName = "UIGradients-Swift";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 589B5195244CC41C007DD217 /* Project object */;
 }

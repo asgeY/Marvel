@@ -69,7 +69,7 @@ struct CardView: View {
     .frame(width: 335, height: 545)
     .background(LinearGradient(gradient: Gradient(colors: card.gradientColors), startPoint: .top, endPoint: .bottom))
     .cornerRadius(16)
-    .shadow(color: .black, radius: 5, x: 5, y: 5)
+    .shadow(color: .white, radius: 5, x: 5, y: 5)
     .onAppear() {
       withAnimation(.linear(duration: 1.2)) {
         self.fadeIn.toggle()
